@@ -1,0 +1,2 @@
+GTraits is component system for Ruby that sections
+a class into a matrix of Method x Precidence.

@@ -1,0 +1,45 @@
+= Matriarch Overview
+
+Load the library.
+
+  require 'matriarch'
+
+Define a Matriarch-based class.
+
+  class C < Matriarch::TraitsObject
+    to :x do
+      "C#x"
+    end
+    to :s do
+      self
+    end
+  end
+
+Ensure that the #x method works.
+
+  c = C.new
+  c.x.assert == "C#x"
+
+Create a second traits class.
+
+  class T < Matriarch::TraitsObject
+    to :x do
+      "T#x"
+    end
+    to :s do
+      p self
+    end
+  end
+
+Include this class into the first class.
+
+  class C
+    include_traits T
+  end
+
+  c = C.new
+  c.x.assert == "T#x"
+
+The result should be that the second
+method overides the first.
+

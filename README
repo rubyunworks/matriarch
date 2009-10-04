@@ -1,0 +1,78 @@
+= Matriarch
+
+* http://rubyworks.github.com/matriarch
+* http://github.comd/rubyworks/matriarch
+
+
+== DESCRIPTION:
+
+Matriarch is an experimental implementation of *trait matricies*.
+Trait matricies can be thought of linked grid of method nodes,
+like linked lists but each node is connect in one direction to
+it's super and sub methods, and in the other with its fellow
+categorical set, something aking to a module.
+
+Please kepp in mind this library is far from any sort of full
+working order, and is provided "AS IS" primarily as means to
+further exploration into the concept of *trait matricies*.
+
+
+== FEATURES/PROBLEMS:
+
+* Very flexible inheritance system
+* Experimental implementation
+
+
+== RELEASE NOTES:
+
+Please see HISTORY file.
+
+
+== SYNOPSIS:
+
+Matriarch uses +to+ instead of +def+ to define method *nodes*.
+This was done simply becuase it was much easier to code then
+using Ruby's method_added hook.
+
+  class C < Matriarch::TraitsObject
+    to :x do
+      "C#x"
+    end
+    to :s do
+      self
+    end
+  end
+
+  c = C.new
+
+  c.x.assert == "C#x"
+
+See RDocs for more information.
+
+
+== INSTALLATION:
+
+Per the usual RubyGems:
+
+  $ sudo gem install matriarch
+
+
+== LICENSE:
+
+(LGPL v3 License)
+
+Copyright (c) 2009 Thomas Sawyer
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
