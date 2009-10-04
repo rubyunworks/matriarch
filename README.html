@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+  <title>File: README [Matriarch]</title>
+
+  <link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet" />
+
+  <script src="./js/jquery.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript"
+    charset="utf-8"></script>
+</head>
+
+<body class="file">
+
+  <div class="head">
+    <h1>README</h1>
+  </div>
+
+  <div id="metadata">
+    <div id="project-metadata">
+
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="./COPYING.html">COPYING</a></li>
+        
+          <li class="file"><a href="./NOTES.html">NOTES</a></li>
+        
+          <li class="file"><a href="./README.html">README</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="./Matriarch.html">Matriarch</a></li>
+        
+          <li><a href="./Matriarch/TraitEvent.html">Matriarch::TraitEvent</a></li>
+        
+          <li><a href="./Matriarch/TraitMethod.html">Matriarch::TraitMethod</a></li>
+        
+          <li><a href="./Matriarch/TraitsObject.html">Matriarch::TraitsObject</a></li>
+        
+          <li><a href="./C.html">C</a></li>
+        
+          <li><a href="./T.html">T</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+
+    <div id="validator-badges">
+      Generated with <a href="http://github.com/proutils/rdazzle">Razzle Dazzle Redfish</a>.<br/>
+      <a href="http://validator.w3.org/check/referer">[Validate]</a>
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1><a href="Matriarch.html">Matriarch</a></h1>
+<ul>
+<li><a
+href="http://rubyworks.github.com/matriarch">rubyworks.github.com/matriarch</a>
+
+</li>
+<li><a
+href="http://github.comd/rubyworks/matriarch">github.comd/rubyworks/matriarch</a>
+
+</li>
+</ul>
+<h2>DESCRIPTION:</h2>
+<p>
+<a href="Matriarch.html">Matriarch</a> is an experimental implementation of
+*trait matricies*. Trait matricies can be thought of linked grid of method
+nodes, like linked lists but each node is connect in one direction to
+it&#8217;s super and sub methods, and in the other with its fellow
+categorical set, something aking to a module.
+</p>
+<p>
+Please kepp in mind this library is far from any sort of full working
+order, and is provided &#8220;AS IS&#8221; primarily as means to further
+exploration into the concept of *trait matricies*.
+</p>
+<h2>FEATURES/PROBLEMS:</h2>
+<ul>
+<li>Very flexible inheritance system
+
+</li>
+<li>Experimental implementation
+
+</li>
+</ul>
+<h2>RELEASE NOTES:</h2>
+<p>
+Please see HISTORY file.
+</p>
+<h2>SYNOPSIS:</h2>
+<p>
+<a href="Matriarch.html">Matriarch</a> uses <tt>to</tt> instead of
+<tt>def</tt> to define method <b>nodes</b>. This was done simply becuase it
+was much easier to code then using Ruby&#8217;s method_added hook.
+</p>
+<pre>
+  class C &lt; Matriarch::TraitsObject
+    to :x do
+      &quot;C#x&quot;
+    end
+    to :s do
+      self
+    end
+  end
+
+  c = C.new
+
+  c.x.assert == &quot;C#x&quot;
+</pre>
+<p>
+See RDocs for more information.
+</p>
+<h2>INSTALLATION:</h2>
+<p>
+Per the usual RubyGems:
+</p>
+<pre>
+  $ sudo gem install matriarch
+</pre>
+<h2>LICENSE:</h2>
+<p>
+(LGPL v3 License)
+</p>
+<p>
+Copyright &#169; 2009 Thomas Sawyer
+</p>
+<p>
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or (at your
+option) any later version.
+</p>
+<p>
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+more details.
+</p>
+<p>
+You should have received a copy of the GNU Lesser General Public License
+along with this program. If not, see <<a
+href="http://www.gnu.org/licenses/">www.gnu.org/licenses/</a>>.
+</p>
+
+  </div>
+
+</body>
+
+
+</html>

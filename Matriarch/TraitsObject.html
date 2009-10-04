@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+  <title>Class: Matriarch::TraitsObject</title>
+
+  <link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../js/jquery.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../js/thickbox-compressed.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../js/quicksearch.js" type="text/javascript"
+    charset="utf-8"></script>
+  <script src="../js/darkfish.js" type="text/javascript"
+    charset="utf-8"></script>
+
+</head>
+<body class="class">
+
+  <div class="head">
+    <h1 class="class">Matriarch::TraitsObject</h1>
+  </div>
+
+  <div id="metadata">
+    <div id="project-metadata">
+
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../lib/matriarch/traits_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/matriarch/traits.rb">lib/matriarch/traits.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      <!-- What about Git info, or Hg info? This seems almost silly, albeit kind of cool. -->
+
+      
+    </div>
+
+    <div id="class-metadata">
+
+      <!-- Parent Class -->
+      
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Object</p>
+        
+      </div>
+      
+
+      <!-- Namespace Contents -->
+      
+
+      <!-- Method Quickref -->
+      
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#M000007">::include_traits</a></li>
+          
+          <li><a href="#M000008">::prepend_triats</a></li>
+          
+          <li><a href="#M000006">::prior_to</a></li>
+          
+          <li><a href="#M000009">::remove_traits</a></li>
+          
+          <li><a href="#M000005">::to</a></li>
+          
+          <li><a href="#M000004">::traits</a></li>
+          
+          <li><a href="#M000010">#trait</a></li>
+          
+        </ul>
+      </div>
+      
+
+      <!-- Included Modules -->
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="../COPYING.html">COPYING</a></li>
+        
+          <li class="file"><a href="../NOTES.html">NOTES</a></li>
+        
+          <li class="file"><a href="../README.html">README</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class Index
+          <span class="search-toggle"><img src="../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <!-- classpage.html : classes -->
+        <ul class="link-list">
+        
+          <li class="module"><a href="../Matriarch.html">Matriarch</a></li>
+        
+          <li class="class"><a href="../Matriarch/TraitEvent.html">Matriarch::TraitEvent</a></li>
+        
+          <li class="class"><a href="../Matriarch/TraitMethod.html">Matriarch::TraitMethod</a></li>
+        
+          <li class="class"><a href="../Matriarch/TraitsObject.html">Matriarch::TraitsObject</a></li>
+        
+          <li class="class"><a href="../C.html">C</a></li>
+        
+          <li class="class"><a href="../T.html">T</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+
+    <div id="validator-badges">
+      Generated with <a href="http://github.com/proutils/rdazzle">Razzle Dazzle Redfish</a>.<br/>
+      <a href="http://validator.w3.org/check/referer">[Validate]</a>
+    </div>
+  </div>
+
+  <div id="documentation">
+
+    <div id="description">
+      <p>
+Traits never change an interface!!!!!!!!!!
+</p>
+
+    </div>
+
+    <!-- Constants -->
+    
+
+    <!-- Attributes -->
+    
+
+    <!-- Methods -->
+    
+    <div id="public-class-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="include-traits-method" class="method-detail ">
+        <a name="M000007"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">include_traits</span><span
+            class="method-args">(klass)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Use traits
+</p>
+          
+
+          
+          <div class="method-source-code"
+            id="include-traits-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/matriarch/traits.rb, line 81</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">include_traits</span>(<span class="ruby-identifier">klass</span>)
+        <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">traits</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">name</span>, <span class="ruby-identifier">chain</span><span class="ruby-operator">|</span>
+          <span class="ruby-identifier">traits</span>[<span class="ruby-identifier">name</span>].<span class="ruby-identifier">concat</span>(<span class="ruby-identifier">chain</span>)
+        <span class="ruby-keyword kw">end</span>
+      <span class="ruby-keyword kw">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+      </div>
+
+    
+      <div id="prepend-triats-method" class="method-detail ">
+        <a name="M000008"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">prepend_triats</span><span
+            class="method-args">(klass)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+prepend traits
+</p>
+          
+
+          
+          <div class="method-source-code"
+            id="prepend-triats-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/matriarch/traits.rb, line 88</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">prepend_triats</span>(<span class="ruby-identifier">klass</span>)
+        <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">traits</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">name</span>, <span class="ruby-identifier">chain</span><span class="ruby-operator">|</span>
+          <span class="ruby-identifier">traits</span>[<span class="ruby-identifier">name</span>].<span class="ruby-identifier">replace</span>(<span class="ruby-identifier">chain</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">traits</span>[<span class="ruby-identifier">name</span>])
+        <span class="ruby-keyword kw">end</span>
+      <span class="ruby-keyword kw">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+      </div>
+
+    
+      <div id="prior-to-method" class="method-detail ">
+        <a name="M000006"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">prior_to</span><span
+            class="method-args">(name, returns=nil, &action)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Define a pre-positioned trait/method.
+</p>
+          
+
+          
+          <div class="method-source-code"
+            id="prior-to-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/matriarch/traits.rb, line 61</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">prior_to</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">returns</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">action</span>)
+        <span class="ruby-identifier">name</span>  = <span class="ruby-identifier">name</span>.<span class="ruby-identifier">to_sym</span>
+        <span class="ruby-identifier">chain</span> = <span class="ruby-identifier">traits</span>[<span class="ruby-identifier">name</span>]
+
+        <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">chain</span>.<span class="ruby-identifier">empty?</span>
+          <span class="ruby-identifier">define_method</span>(<span class="ruby-identifier">name</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-operator">*</span><span class="ruby-identifier">a</span><span class="ruby-operator">|</span>  <span class="ruby-comment cmt">#&amp;b|</span>
+            <span class="ruby-identifier">trait</span>.<span class="ruby-identifier">input</span> = <span class="ruby-identifier">a</span>  <span class="ruby-comment cmt"># oringal input</span>
+            <span class="ruby-identifier">chain</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">tm</span><span class="ruby-operator">|</span>
+              <span class="ruby-identifier">triat</span>.<span class="ruby-identifier">output</span> = <span class="ruby-identifier">tm</span>.<span class="ruby-identifier">call</span>(<span class="ruby-keyword kw">self</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">a</span>) <span class="ruby-comment cmt">#, &amp;b)</span>
+              <span class="ruby-identifier">trait</span>.<span class="ruby-identifier">trait</span>  = <span class="ruby-identifier">tm</span>
+              <span class="ruby-keyword kw">break</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">tm</span>.<span class="ruby-identifier">return?</span>
+            <span class="ruby-keyword kw">end</span>
+            <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">trait</span>.<span class="ruby-identifier">output</span>
+          <span class="ruby-keyword kw">end</span>
+        <span class="ruby-keyword kw">end</span>
+
+        <span class="ruby-identifier">chain</span>.<span class="ruby-identifier">unshit</span>(<span class="ruby-constant">TraitMethod</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword kw">self</span>, <span class="ruby-identifier">returns</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">action</span>))
+      <span class="ruby-keyword kw">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+      </div>
+
+    
+      <div id="remove-traits-method" class="method-detail ">
+        <a name="M000009"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">remove_traits</span><span
+            class="method-args">(klass)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Remove a traits
+</p>
+          
+
+          
+          <div class="method-source-code"
+            id="remove-traits-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/matriarch/traits.rb, line 95</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">remove_traits</span>(<span class="ruby-identifier">klass</span>)
+        <span class="ruby-identifier">traits</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">name</span>, <span class="ruby-identifier">chain</span><span class="ruby-operator">|</span>
+          <span class="ruby-identifier">chain</span>.<span class="ruby-identifier">delete_if</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">tm</span><span class="ruby-operator">|</span>
+            <span class="ruby-identifier">tm</span>.<span class="ruby-identifier">container</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">klass</span>
+          <span class="ruby-keyword kw">end</span>
+        <span class="ruby-keyword kw">end</span>
+      <span class="ruby-keyword kw">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+      </div>
+
+    
+      <div id="to-method" class="method-detail ">
+        <a name="M000005"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">to</span><span
+            class="method-args">(name, returns=nil, &action)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+Define a post-positioned trait/method.
+</p>
+          
+
+          
+          <div class="method-source-code"
+            id="to-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/matriarch/traits.rb, line 40</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">to</span>(<span class="ruby-identifier">name</span>, <span class="ruby-identifier">returns</span>=<span class="ruby-keyword kw">nil</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">action</span>)
+        <span class="ruby-identifier">name</span>  = <span class="ruby-identifier">name</span>.<span class="ruby-identifier">to_sym</span>
+        <span class="ruby-identifier">chain</span> = <span class="ruby-identifier">traits</span>[<span class="ruby-identifier">name</span>]
+
+        <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">chain</span>.<span class="ruby-identifier">empty?</span>
+          <span class="ruby-identifier">define_method</span>(<span class="ruby-identifier">name</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-operator">*</span><span class="ruby-identifier">a</span><span class="ruby-operator">|</span>  <span class="ruby-comment cmt">#&amp;b|</span>
+            <span class="ruby-identifier">trait</span>.<span class="ruby-identifier">input</span> = <span class="ruby-identifier">a</span>  <span class="ruby-comment cmt"># oringal input</span>
+            <span class="ruby-identifier">chain</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">tm</span><span class="ruby-operator">|</span>
+              <span class="ruby-identifier">trait</span>.<span class="ruby-identifier">output</span> = <span class="ruby-identifier">tm</span>.<span class="ruby-identifier">call</span>(<span class="ruby-keyword kw">self</span>, <span class="ruby-operator">*</span><span class="ruby-identifier">a</span>) <span class="ruby-comment cmt">#, &amp;b)</span>
+              <span class="ruby-identifier">trait</span>.<span class="ruby-identifier">method</span> = <span class="ruby-identifier">tm</span>
+              <span class="ruby-keyword kw">break</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">tm</span>.<span class="ruby-identifier">return?</span>
+            <span class="ruby-keyword kw">end</span>
+            <span class="ruby-keyword kw">return</span> <span class="ruby-identifier">trait</span>.<span class="ruby-identifier">output</span>
+          <span class="ruby-keyword kw">end</span>
+        <span class="ruby-keyword kw">end</span>
+
+        <span class="ruby-identifier">chain</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-constant">TraitMethod</span>.<span class="ruby-identifier">new</span>(<span class="ruby-keyword kw">self</span>, <span class="ruby-identifier">returns</span>, <span class="ruby-operator">&amp;</span><span class="ruby-identifier">action</span>)
+      <span class="ruby-keyword kw">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+      </div>
+
+    
+      <div id="traits-method" class="method-detail ">
+        <a name="M000004"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">traits</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p class="missing-docs">(Not documented)</p>
+          
+
+          
+          <div class="method-source-code"
+            id="traits-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/matriarch/traits.rb, line 34</span>
+      <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">traits</span>
+        <span class="ruby-ivar">@traits</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">h</span>,<span class="ruby-identifier">k</span><span class="ruby-operator">|</span> <span class="ruby-identifier">h</span>[<span class="ruby-identifier">k</span>]=[]}
+      <span class="ruby-keyword kw">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+      </div>
+
+    
+    </div>
+  
+    <div id="public-instance-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="trait-method" class="method-detail ">
+        <a name="M000010"></a>
+
+        <div class="method-heading">
+        
+          <span class="method-name">trait</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        
+        </div>
+
+        <div class="method-description">
+          
+          <p>
+ok. I know it&#8217;s not thread-safe, but for now...
+</p>
+          
+
+          
+          <div class="method-source-code"
+            id="trait-source">
+<pre>
+<span class="ruby-comment cmt"># File lib/matriarch/traits.rb, line 106</span>
+    <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">trait</span>
+      <span class="ruby-ivar">@triat</span> <span class="ruby-operator">||=</span> <span class="ruby-constant">TraitEvent</span>.<span class="ruby-identifier">new</span>()
+    <span class="ruby-keyword kw">end</span></pre>
+          </div>
+          
+        </div>
+
+        
+      </div>
+
+    
+    </div>
+  
+
+  </div>
+
+
+  <div id="rdoc-debugging-section-dump" class="debugging-section">
+  
+    <p>Disabled; run with --debug to generate this.</p>
+  
+  </div>
+
+</body>
+</html>
