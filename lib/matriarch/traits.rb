@@ -111,30 +111,3 @@ module Matriarch
 
 end
 
-if __FILE__ == $0
-
-  class C < Matriarch::TraitsObject
-    to :jump do
-      puts "jump C!"; p self
-    end
-  end
-
-  c = C.new
-  c.jump
-
-  puts "---"
-
-  class T < Matriarch::TraitsObject
-    to :jump do
-      puts "jump T!"; p self
-    end
-  end
-
-  class C
-    include_traits T
-  end
-
-  c = C.new
-  c.jump
-
-end

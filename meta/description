@@ -1,2 +1,2 @@
-GTraits is component system for Ruby that sections
-a class into a matrix of Method x Precidence.
+Matriarch is traits system for Ruby that sections
+a class into a matrix of Method and Precedence.
