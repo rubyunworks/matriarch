@@ -1,0 +1,22 @@
+--- 
+title  : Matriarch
+suite  : rubyworks
+summary: Matrix Traits
+contact: Trans <transfire@gmail.com>
+license: MIT
+authors: Thomas Sawyer
+created: 2009-10-03
+
+description:
+  Matriarch is traits system for Ruby that sections
+  a class into a matrix of Method and Precedence.
+
+resources:
+  homepage   : http://rubyworks.github.com/matriarch
+  development: http://github.com/rubyworks/matriarch
+  mailinglist: http://groups.google.com/group/rubyworks-mailinglist
+  subscribe  : rubyworks-mailinglist+subscribe@googlegroups.com
+
+copyright:
+  Copyright (c) 2009 Thomas Sawyer
+

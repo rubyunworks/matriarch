@@ -7,12 +7,12 @@
 == DESCRIPTION:
 
 Matriarch is an experimental implementation of *trait matricies*.
-Trait matricies can be thought of linked grid of method nodes,
-like linked lists but each node is connect in one direction to
+Trait matricies can be thought of as a linked grid of method nodes,
+like linked lists but each node is connected in one direction to
 it's super and sub methods, and in the other with its fellow
-categorical set, something aking to a module.
+categorical set, something akin to a module.
 
-Please kepp in mind this library is far from any sort of full
+Please keep in mind this library is far from any sort of full
 working order, and is provided "AS IS" primarily as means to
 further exploration into the concept of *trait matricies*.
 
@@ -32,7 +32,7 @@ Please see HISTORY file.
 
 Matriarch uses +to+ instead of +def+ to define method *nodes*.
 This was done simply becuase it was much easier to code then
-using Ruby's method_added hook.
+using Ruby's #method_added hook.
 
   class C < Matriarch::TraitsObject
     to :x do
@@ -47,7 +47,7 @@ using Ruby's method_added hook.
 
   c.x.assert == "C#x"
 
-See RDocs for more information.
+See the RDocs for more information.
 
 
 == INSTALLATION:
