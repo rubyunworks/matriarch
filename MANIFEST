@@ -1,0 +1,12 @@
+#!mast -x Sykfile -x PROFIL .ruby bin lib man spec test [A-Z]*
+.ruby
+lib/matriarch/traits.rb
+lib/matriarch.rb
+test/test2.rb
+test/test3.rb
+PROFILE
+NOTES
+README
+Syckfile
+VERSION
+COPYING
